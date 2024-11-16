@@ -19,7 +19,7 @@ public class ModuleController : MonoBehaviour
     {
         foreach (var module in modulesList)
         {
-            
+
         }
     }
 

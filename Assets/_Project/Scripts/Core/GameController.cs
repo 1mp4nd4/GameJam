@@ -15,7 +15,7 @@ public class GameController : MonoBehaviour
         Gameplay = 2,
     }
 
-    private Dictionary<Scenes,string> scenesDict = new Dictionary<Scenes,string>()
+    private Dictionary<Scenes, string> scenesDict = new Dictionary<Scenes, string>()
     {
         { Scenes.MainMenu, "MainMenu" },
         { Scenes.Gameplay, "Gameplay" }
@@ -44,7 +44,7 @@ public class GameController : MonoBehaviour
     public void ChangeScene(Scenes scene)
     {
         Debug.Log("test");
-        if(scenesDict.TryGetValue(scene, out string sceneName))
+        if (scenesDict.TryGetValue(scene, out string sceneName))
         {
             Debug.Log(sceneName);
             SceneManager.LoadScene(sceneName);
