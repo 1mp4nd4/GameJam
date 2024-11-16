@@ -1,12 +1,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SequenceChecker : MonoBehaviour
+public class GameModuleButtons : GameModule
 {
     [SerializeField] private List<GameObject> gameObjects;
     [SerializeField] private List<int> correctSequence;
-
-    private int currentIndex = 0;
+    [SerializeField] private int currentIndex;
 
     private void Start()
     {
@@ -16,12 +15,18 @@ public class SequenceChecker : MonoBehaviour
             return;
         }
 
-        for (int i = 0; i < gameObjects.Count; i++)
-        {
-            int index = i; // Capture the current index 
-            gameObjects[i].AddComponent<BoxCollider>(); // Ensure the GameObject has a collider
-            gameObjects[i].AddComponent<Clickable>().OnClick += () => OnGameObjectClicked(index);
-        }
+        foreach (var gameObject in gameObjects)
+            gameObject.AddComponent<Clickable>().OnClick += () =>
+            {
+                int index = GetGameObjectIndex(gameObject);
+                Debug.Log($"GameObject clicked: {gameObject.name}, Index: {index}");
+                OnGameObjectClicked(index);
+            };
+    }
+
+    private int GetGameObjectIndex(GameObject gameObject)
+    {
+        return gameObjects.IndexOf(gameObject);
     }
 
     private void OnGameObjectClicked(int index)
@@ -33,24 +38,15 @@ public class SequenceChecker : MonoBehaviour
             if (currentIndex >= correctSequence.Count)
             {
                 Debug.Log("Sequence completed!");
+                OnSequenceEvent(true);
                 currentIndex = 0; // Reset for next sequence
             }
         }
         else
         {
             Debug.LogError("Incorrect object clicked!");
+            OnSequenceEvent(false);
             currentIndex = 0; // Reset sequence on error
         }
-    }
-}
-
-public class Clickable : MonoBehaviour
-{
-    public delegate void ClickAction();
-    public event ClickAction OnClick;
-
-    private void OnMouseDown()
-    {
-        OnClick?.Invoke();
     }
 }
