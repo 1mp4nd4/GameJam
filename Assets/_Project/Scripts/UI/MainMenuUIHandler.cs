@@ -11,8 +11,8 @@ public class MainMenuUIHandler : MonoBehaviour
     private void Start()
     {
         animationSequence = DOTween.Sequence();
-        Debug.Break();
-        StartAnimationSequence();
+        //Debug.Break();
+        //StartAnimationSequence();
     }
 
     private void StartAnimationSequence()
