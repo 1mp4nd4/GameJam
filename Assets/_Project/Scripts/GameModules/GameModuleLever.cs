@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,9 +8,16 @@ public class GameModuleLever : GameModule
     [SerializeField] private List<GameObject> gameObjects;
     [SerializeField] private List<int> correctSequence;
     [SerializeField] private int currentIndex;
-    private Animator _animator;
-    
-    
+    //private Animator _animator;
+
+    [Header("Lever animation")]
+    [SerializeField] private RectTransform leverTransform;
+    [SerializeField] private float animationSpeed = 0.5f;
+    [SerializeField] private Ease animationEase = Ease.OutBack;
+
+    private Sequence leverSequence;
+
+
     private void Start()
     {
         if (gameObjects.Count == 0 || correctSequence.Count == 0)
@@ -29,6 +37,11 @@ public class GameModuleLever : GameModule
         }
     }
 
+    private void OnDisable()
+    {
+        leverSequence?.Kill();
+    }
+
     private int GetGameObjectIndex(GameObject gameObject)
     {
         return gameObjects.IndexOf(gameObject);
@@ -36,7 +49,6 @@ public class GameModuleLever : GameModule
 
     private void OnGameObjectClicked(int index)
     {
-        
         if (correctSequence[currentIndex] == index)
         {
             Debug.Log("Correct!");
@@ -55,39 +67,52 @@ public class GameModuleLever : GameModule
             currentIndex = 0; // Reset sequence on error
         }
     }
-    
-    public class HoverAnim : MonoBehaviour
+
+    //Use this method with values 1f for up, -1f for down, it'll reset automatically.
+    //Ideally we should disable the clicking part when the lever is moved so it doesn't repeat the animation but just in case
+    //I've made it so the animation resets before starting. If this is not desired, remove the "true" when doing "leverSequence?.Kill(true);"
+    private void MoveLeverGraphic(float ypos)
     {
-        private Animator animator;
-        void Awake()
-        {
-            animator = GetComponent<Animator>();
-            if (animator == null)
-            {
-                Debug.LogError("Animator component not found on the GameObject.");
-            }
-        }
-        
-        void OnMouseOver()
-        {
-            animator.SetBool("Hover", true);
-        }
 
-        void OnMouseExit()
-        {
-            animator.SetBool("Hover", false);
-            if (animator.GetBool("HasClicked"))
-            {
-                animator.SetBool("HasClicked", false);
-            }
-        }
-
-        private void OnMouseDown()
-        { 
-            animator.SetTrigger("Press");
-            animator.SetBool("HasClicked", true);
-        }
-        
+        leverSequence?.Kill(true);
+        leverSequence = DOTween.Sequence();
+        leverSequence.Append(leverTransform.DOAnchorPosY(ypos, animationSpeed)).AppendInterval(2f).Append(leverTransform.DOAnchorPosY(0f, animationSpeed)).SetEase(animationEase);
+        leverSequence.Play();
     }
+
+
+    //public class HoverAnim : MonoBehaviour
+    //{
+    //    private Animator animator;
+    //    void Awake()
+    //    {
+    //        animator = GetComponent<Animator>();
+    //        if (animator == null)
+    //        {
+    //            Debug.LogError("Animator component not found on the GameObject.");
+    //        }
+    //    }
+        
+    //    void OnMouseOver()
+    //    {
+    //        animator.SetBool("Hover", true);
+    //    }
+
+    //    void OnMouseExit()
+    //    {
+    //        animator.SetBool("Hover", false);
+    //        if (animator.GetBool("HasClicked"))
+    //        {
+    //            animator.SetBool("HasClicked", false);
+    //        }
+    //    }
+
+    //    private void OnMouseDown()
+    //    { 
+    //        animator.SetTrigger("Press");
+    //        animator.SetBool("HasClicked", true);
+    //    }
+        
+    //}
 
 }
