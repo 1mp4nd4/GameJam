@@ -58,6 +58,7 @@ public class ModuleController : MonoBehaviour
 
     private void ErrorDetected()
     {
+        lampFeedback.IncorrectSequenceFeedback();
         Debug.Log("Error detected");
         currentErrors++;
         if (currentErrors >= maxErrors)
@@ -68,7 +69,7 @@ public class ModuleController : MonoBehaviour
     
     private void CorrectModuleDetected()
     {
-        //lampFeedback.CorrectSequenceFeedback();
+        lampFeedback.CorrectSequenceFeedback();
         Debug.Log("Correct module detected");
         correctModules++;
         if (correctModules >= modulesList.Count)

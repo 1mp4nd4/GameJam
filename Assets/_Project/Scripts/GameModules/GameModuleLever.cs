@@ -44,14 +44,17 @@ public class GameModuleLever : GameModule
 
     private void OnGameObjectClicked(int index)
     {
-        if (index == 0 || index == 1)
-        {
-           MoveLeverGraphic(-1f);
-        }
-        else
-        {
-            MoveLeverGraphic(1f);
-        }
+        int ypos = index == 1 ? -1 : 1;
+        MoveLeverGraphic(ypos);
+
+        //if (index == 0 || index == 1)
+        //{
+        //   MoveLeverGraphic(-1f);
+        //}
+        //else
+        //{
+        //    MoveLeverGraphic(1f);
+        //}
         if (correctSequence[currentIndex] == index)
         {
             Debug.Log("Correct!");

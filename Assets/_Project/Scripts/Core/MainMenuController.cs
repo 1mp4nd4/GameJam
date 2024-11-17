@@ -4,7 +4,7 @@ public class MainMenuController : MonoBehaviour
 {
     public void StartGame()
     {
-        GameController.Instance.ChangeScene(GameController.Scenes.Testing);
+        GameController.Instance.ChangeScene(GameController.Scenes.Gameplay);
     }
 
     public void QuitGame()
