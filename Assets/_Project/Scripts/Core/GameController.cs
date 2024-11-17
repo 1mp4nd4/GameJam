@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -13,12 +14,14 @@ public class GameController : MonoBehaviour
         None = 0,
         MainMenu = 1,
         Gameplay = 2,
+        Testing = 3
     }
 
     private Dictionary<Scenes, string> scenesDict = new Dictionary<Scenes, string>()
     {
         { Scenes.MainMenu, "MainMenu" },
-        { Scenes.Gameplay, "Gameplay" }
+        { Scenes.Gameplay, "Gameplay" },
+        { Scenes.Testing, "SampleScene" }
     };
 
     private void Awake()
@@ -43,11 +46,19 @@ public class GameController : MonoBehaviour
     // Con esto cambias de escena je
     public void ChangeScene(Scenes scene)
     {
-        Debug.Log("test");
         if (scenesDict.TryGetValue(scene, out string sceneName))
         {
             Debug.Log(sceneName);
             SceneManager.LoadScene(sceneName);
         }
+    }
+
+    internal void QuitGame()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
     }
 }
