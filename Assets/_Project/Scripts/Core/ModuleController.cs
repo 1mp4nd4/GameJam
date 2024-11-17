@@ -4,11 +4,9 @@ using UnityEngine;
 public class ModuleController : MonoBehaviour
 {
     [SerializeField] private List<GameModule> modulesList = new();
-
     [SerializeField] private int maxErrors = 3;
-    private int currentErrors = 0;
-
-    private int correctModules = 0;
+    [SerializeField]private int currentErrors = 0;
+    [SerializeField]private int correctModules = 0;
 
     private void Start()
     {
@@ -19,7 +17,7 @@ public class ModuleController : MonoBehaviour
     {
         foreach (var module in modulesList)
         {
-            module.SequenceEvent += ModuleCheck;
+            module.SequenceEvent += OnSequenceEvent;
         }
     }
 
@@ -27,11 +25,11 @@ public class ModuleController : MonoBehaviour
     {
         foreach (var module in modulesList)
         {
-            module.SequenceEvent -= ModuleCheck;
+            module.SequenceEvent -= OnSequenceEvent;
         }
     }
 
-    private void ModuleCheck(bool correct)
+    private void OnSequenceEvent(bool correct)
     {
         if (correct)
             CorrectModuleDetected();

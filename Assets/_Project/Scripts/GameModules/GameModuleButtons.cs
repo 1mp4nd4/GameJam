@@ -7,7 +7,7 @@ public class GameModuleButtons : GameModule
     [SerializeField] private List<GameObject> gameObjects;
     [SerializeField] private List<int> correctSequence;
     [SerializeField] private int currentIndex;
-    private Animator animator;
+    private Animator _animator;
     
     
     private void Start()
@@ -18,6 +18,7 @@ public class GameModuleButtons : GameModule
             return;
         }
         foreach (var gameObject in gameObjects)
+        {
             gameObject.AddComponent<HoverAnim>();
             gameObject.AddComponent<Clickable>().OnClick += () =>
             {
@@ -25,6 +26,7 @@ public class GameModuleButtons : GameModule
                 Debug.Log($"GameObject clicked: {gameObject.name}, Index: {index}");
                 OnGameObjectClicked(index);
             };
+        }
     }
 
     private int GetGameObjectIndex(GameObject gameObject)
@@ -65,17 +67,14 @@ public class GameModuleButtons : GameModule
                 Debug.LogError("Animator component not found on the GameObject.");
             }
         }
+        
         void OnMouseOver()
         {
-            //If your mouse hovers over the GameObject with the script attached, output this message
-            Debug.Log("Mouse is over GameObject.");
             animator.SetBool("Hover", true);
         }
 
         void OnMouseExit()
         {
-            //The mouse is no longer hovering over the GameObject so output this message each frame
-            Debug.Log("Mouse is no longer on GameObject.");
             animator.SetBool("Hover", false);
             if (animator.GetBool("HasClicked"))
             {
@@ -85,18 +84,10 @@ public class GameModuleButtons : GameModule
 
         private void OnMouseDown()
         { 
-            Debug.Log("Press");
             animator.SetTrigger("Press");
             animator.SetBool("HasClicked", true);
         }
-
-        private void SetHover(bool isHovering)
-        {
-            // Implement the logic to change the Hover parameter of the GameObject
-            // For example, you can change a material property, trigger an animation, etc.
-            // This is a placeholder implementation
-            Debug.Log($"Hover parameter set to: {isHovering}");
-        }
+        
     }
 
 }
