@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class ModuleController : MonoBehaviour
 {
-    [SerializeField] private List<int> modulesList = new();
+    [SerializeField] private List<GameModule> modulesList = new();
 
     [SerializeField] private int maxErrors = 3;
     private int currentErrors = 0;
@@ -19,7 +19,7 @@ public class ModuleController : MonoBehaviour
     {
         foreach (var module in modulesList)
         {
-
+            module.SequenceEvent += ModuleCheck;
         }
     }
 
@@ -27,7 +27,7 @@ public class ModuleController : MonoBehaviour
     {
         foreach (var module in modulesList)
         {
-
+            module.SequenceEvent -= ModuleCheck;
         }
     }
 
@@ -41,11 +41,17 @@ public class ModuleController : MonoBehaviour
 
     private void ErrorDetected()
     {
-
+        Debug.Log("Error detected");
+        currentErrors++;
+        if (currentErrors >= maxErrors)
+            Debug.Log("Game over");
     }
 
     private void CorrectModuleDetected()
     {
-
+        Debug.Log("Correct module detected");
+        correctModules++;
+        if (correctModules >= modulesList.Count)
+            Debug.Log("Crisis adverted. You won");
     }
 }
