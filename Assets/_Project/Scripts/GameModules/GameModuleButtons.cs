@@ -5,18 +5,13 @@ using UnityEngine;
 public class GameModuleButtons : GameModule
 {
     [SerializeField] private List<GameObject> gameObjects;
-    [SerializeField] private List<int> correctSequence;
+    [SerializeField] public List<int> correctSequence;
     [SerializeField] private int currentIndex;
     private Animator _animator;
     
     
     private void Start()
     {
-        if (gameObjects.Count == 0 || correctSequence.Count == 0)
-        {
-            Debug.LogError("The gameObjects list and the correctSequence list must not be empty.");
-            return;
-        }
         foreach (var gameObject in gameObjects)
         {
             gameObject.AddComponent<HoverAnim>();

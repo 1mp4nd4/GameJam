@@ -6,7 +6,7 @@ using UnityEngine;
 public class GameModuleLever : GameModule
 {
     [SerializeField] private List<GameObject> gameObjects;
-    [SerializeField] private List<int> correctSequence;
+    [SerializeField] public List<int> correctSequence;
     [SerializeField] private int currentIndex;
     //private Animator _animator;
 
@@ -20,11 +20,6 @@ public class GameModuleLever : GameModule
 
     private void Start()
     {
-        if (gameObjects.Count == 0 || correctSequence.Count == 0)
-        {
-            Debug.LogError("The gameObjects list and the correctSequence list must not be empty.");
-            return;
-        }
         foreach (var gameObject in gameObjects)
         {
             //gameObject.AddComponent<HoverAnim>();
@@ -49,6 +44,14 @@ public class GameModuleLever : GameModule
 
     private void OnGameObjectClicked(int index)
     {
+        if (index == 0 || index == 1)
+        {
+           MoveLeverGraphic(-1f);
+        }
+        else
+        {
+            MoveLeverGraphic(1f);
+        }
         if (correctSequence[currentIndex] == index)
         {
             Debug.Log("Correct!");
