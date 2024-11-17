@@ -14,15 +14,13 @@ public class GameController : MonoBehaviour
         None = 0,
         MainMenu = 1,
         Gameplay = 2,
-        Testing = 3,
-        Gameover = 4
+        Gameover = 3
     }
 
     private Dictionary<Scenes, string> scenesDict = new Dictionary<Scenes, string>()
     {
         { Scenes.MainMenu, "MainMenu" },
         { Scenes.Gameplay, "Gameplay" },
-        { Scenes.Testing, "SampleScene" },
         { Scenes.Gameover, "GameOver" }
     };
 
