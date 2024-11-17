@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 53b1670b65994e4079d7d4ea14306d1b
+guid: 8bf2412ec7491d603add0c194672d3f4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5569239656742186798
-    second: Luz Neutral_0
+      213: 3635628364001518416
+    second: Luz Verde_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Luz Neutral_0
+      name: Luz Verde_0
       rect:
         serializedVersion: 2
         x: 8
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e2fe221f5f9e94d40800000000000000
-      internalID: 5569239656742186798
+      spriteID: 05325a31cb8547230800000000000000
+      internalID: 3635628364001518416
       vertices: []
       indices: 
       edges: []

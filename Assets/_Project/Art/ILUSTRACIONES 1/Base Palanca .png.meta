@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8a229080194aa2804a06ed401063150c
+guid: 8ed17493fd0781301984fc4ae02fa87b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3618592806908353621
-    second: Team Logo_0
+      213: -1701689152585499074
+    second: Base Palanca _0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Team Logo_0
+      name: Base Palanca _0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1
-        width: 64
-        height: 63
+        x: 109
+        y: 55
+        width: 184
+        height: 363
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 55c5e8a5cf2d73230800000000000000
-      internalID: 3618592806908353621
+      spriteID: e3e710e4bb26268e0800000000000000
+      internalID: -1701689152585499074
       vertices: []
       indices: 
       edges: []

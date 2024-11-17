@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 62fd208f5865d20cc8c1c536f4205785
+guid: a411326b9d11d7677845828aec9d2d84
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 239844841878385558
-    second: Boton Azul Press_0
+      213: -4864662918734928584
+    second: Boton Amarillo Press_0
   - first:
-      213: 2110756300435038418
-    second: Boton Azul Press_1
+      213: -1969957795838955422
+    second: Boton Amarillo Press_1
   - first:
-      213: -8237870985368614388
-    second: Boton Azul Press_2
+      213: 6862770516261711065
+    second: Boton Amarillo Press_2
   - first:
-      213: -4898494416083940030
-    second: Boton Azul Press_3
+      213: 8549097415583500231
+    second: Boton Amarillo Press_3
   - first:
-      213: 168916690854205526
-    second: Boton Azul Press_4
+      213: 8729538538334376172
+    second: Boton Amarillo Press_4
   - first:
-      213: 7219030192585230971
-    second: Boton Azul Press_5
+      213: 3966385228844506910
+    second: Boton Amarillo Press_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -128,7 +128,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Boton Azul Press_0
+      name: Boton Amarillo Press_0
       rect:
         serializedVersion: 2
         x: 1
@@ -143,14 +143,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 693fe59ec99145300800000000000000
-      internalID: 239844841878385558
+      spriteID: 8352ac879de3d7cb0800000000000000
+      internalID: -4864662918734928584
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boton Azul Press_1
+      name: Boton Amarillo Press_1
       rect:
         serializedVersion: 2
         x: 101
@@ -165,14 +165,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2d029d60ca9ea4d10800000000000000
-      internalID: 2110756300435038418
+      spriteID: 260f18c62dd49a4e0800000000000000
+      internalID: -1969957795838955422
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boton Azul Press_2
+      name: Boton Amarillo Press_2
       rect:
         serializedVersion: 2
         x: 201
@@ -187,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c0a4b932cf33dad80800000000000000
-      internalID: -8237870985368614388
+      spriteID: 9dcadcc8c657d3f50800000000000000
+      internalID: 6862770516261711065
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boton Azul Press_3
+      name: Boton Amarillo Press_3
       rect:
         serializedVersion: 2
         x: 301
@@ -209,14 +209,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 24d051b284d050cb0800000000000000
-      internalID: -4898494416083940030
+      spriteID: 7c7801eedce74a670800000000000000
+      internalID: 8549097415583500231
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boton Azul Press_4
+      name: Boton Amarillo Press_4
       rect:
         serializedVersion: 2
         x: 401
@@ -231,14 +231,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 658dffad5dc185200800000000000000
-      internalID: 168916690854205526
+      spriteID: ce0d08eac0d852970800000000000000
+      internalID: 8729538538334376172
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boton Azul Press_5
+      name: Boton Amarillo Press_5
       rect:
         serializedVersion: 2
         x: 501
@@ -253,8 +253,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b7accdb46b52f2460800000000000000
-      internalID: 7219030192585230971
+      spriteID: e1f12afc95e6b0730800000000000000
+      internalID: 3966385228844506910
       vertices: []
       indices: 
       edges: []

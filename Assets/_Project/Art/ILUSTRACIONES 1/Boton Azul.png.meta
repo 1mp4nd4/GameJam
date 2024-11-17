@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: c80aa6ef683d1c7f4a5da42edc146686
+guid: 4dc03a746107b3f4eab2f24be411f72f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6820273096651055653
-    second: Modulo Panel Base R_0
-  - first:
-      213: -1647204098009853886
-    second: Modulo Panel Base R_1
+      213: 5084290872456853956
+    second: Boton Azul_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -116,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Modulo Panel Base R_0
+      name: Boton Azul_0
       rect:
         serializedVersion: 2
-        x: 26
-        y: 1
-        width: 449
-        height: 268
+        x: 1
+        y: 0
+        width: 98
+        height: 92
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,30 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5222a0dfe3a76ae50800000000000000
-      internalID: 6820273096651055653
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Modulo Panel Base R_1
-      rect:
-        serializedVersion: 2
-        x: 465
-        y: 13
-        width: 14
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2401e81a994f329e0800000000000000
-      internalID: -1647204098009853886
+      spriteID: 4c93d8b5c970f8640800000000000000
+      internalID: 5084290872456853956
       vertices: []
       indices: 
       edges: []

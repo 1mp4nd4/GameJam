@@ -1,25 +1,10 @@
 fileFormatVersion: 2
-guid: f1cfdd281e23eb0f580d61e6846b6e0a
+guid: fd835d6e50e08b879b7e8d295004a1c4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4864662918734928584
-    second: Boton Amarillo Press_0
-  - first:
-      213: -1969957795838955422
-    second: Boton Amarillo Press_1
-  - first:
-      213: 6862770516261711065
-    second: Boton Amarillo Press_2
-  - first:
-      213: 8549097415583500231
-    second: Boton Amarillo Press_3
-  - first:
-      213: 8729538538334376172
-    second: Boton Amarillo Press_4
-  - first:
-      213: 3966385228844506910
-    second: Boton Amarillo Press_5
+      213: 378741880004759398
+    second: Boton Amarillo_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -128,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Boton Amarillo Press_0
+      name: Boton Amarillo_0
       rect:
         serializedVersion: 2
         x: 1
         y: 0
         width: 98
-        height: 91
+        height: 92
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,118 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8352ac879de3d7cb0800000000000000
-      internalID: -4864662918734928584
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Boton Amarillo Press_1
-      rect:
-        serializedVersion: 2
-        x: 101
-        y: 0
-        width: 98
-        height: 88
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 260f18c62dd49a4e0800000000000000
-      internalID: -1969957795838955422
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Boton Amarillo Press_2
-      rect:
-        serializedVersion: 2
-        x: 201
-        y: 0
-        width: 98
-        height: 81
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9dcadcc8c657d3f50800000000000000
-      internalID: 6862770516261711065
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Boton Amarillo Press_3
-      rect:
-        serializedVersion: 2
-        x: 301
-        y: 0
-        width: 98
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7c7801eedce74a670800000000000000
-      internalID: 8549097415583500231
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Boton Amarillo Press_4
-      rect:
-        serializedVersion: 2
-        x: 401
-        y: 0
-        width: 98
-        height: 87
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ce0d08eac0d852970800000000000000
-      internalID: 8729538538334376172
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Boton Amarillo Press_5
-      rect:
-        serializedVersion: 2
-        x: 501
-        y: 0
-        width: 98
-        height: 89
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e1f12afc95e6b0730800000000000000
-      internalID: 3966385228844506910
+      spriteID: 66f4f33bbbf814500800000000000000
+      internalID: 378741880004759398
       vertices: []
       indices: 
       edges: []

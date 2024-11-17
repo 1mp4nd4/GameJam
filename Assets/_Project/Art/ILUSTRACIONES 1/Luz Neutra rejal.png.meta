@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 88d1066bfbce35c158b286f9d152fff6
+guid: fcb621327b9304ecabf493becfd2d304
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5084290872456853956
-    second: Boton Azul_0
+      213: -2049202722992557571
+    second: Luz Neutra rejal_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Boton Azul_0
+      name: Luz Neutra rejal_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 0
-        width: 98
-        height: 92
+        x: 8
+        y: 7
+        width: 209
+        height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4c93d8b5c970f8640800000000000000
-      internalID: 5084290872456853956
+      spriteID: df1f3470bf4cf83e0800000000000000
+      internalID: -2049202722992557571
       vertices: []
       indices: 
       edges: []

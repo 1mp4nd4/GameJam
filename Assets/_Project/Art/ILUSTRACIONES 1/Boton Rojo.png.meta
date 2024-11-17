@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: df90971bda81771919c61145951acd55
+guid: df9784958a079569698b480eb17d2d83
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3824453243168690569
-    second: Luz Roja_0
+      213: 7684205732688796250
+    second: Boton Rojo_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Luz Roja_0
+      name: Boton Rojo_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 7
-        width: 209
-        height: 97
+        x: 1
+        y: 0
+        width: 98
+        height: 92
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 981192b36ff231530800000000000000
-      internalID: 3824453243168690569
+      spriteID: a5a9fe5b668c3aa60800000000000000
+      internalID: 7684205732688796250
       vertices: []
       indices: 
       edges: []

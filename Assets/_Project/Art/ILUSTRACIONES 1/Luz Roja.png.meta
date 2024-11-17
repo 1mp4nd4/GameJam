@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: b2b770dd906829d9c9668a65e8e52581
+guid: 7bc66fc400681186a8f9a73447b687d1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4105695964492434878
-    second: Modulo Panel Base L_0
-  - first:
-      213: 1897704546722296595
-    second: Modulo Panel Base L_1
+      213: 3824453243168690569
+    second: Luz Roja_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -116,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Modulo Panel Base L_0
+      name: Luz Roja_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 13
-        width: 14
-        height: 13
+        x: 8
+        y: 7
+        width: 209
+        height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,30 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2427ca0f543a507c0800000000000000
-      internalID: -4105695964492434878
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Modulo Panel Base L_1
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 1
-        width: 449
-        height: 268
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 313b6041b30065a10800000000000000
-      internalID: 1897704546722296595
+      spriteID: 981192b36ff231530800000000000000
+      internalID: 3824453243168690569
       vertices: []
       indices: 
       edges: []

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: efc739c21bbb80505aa22aad10e84ca6
+guid: 97665eda3180ac93f942774fe3ea88ef
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3635628364001518416
-    second: Luz Verde_0
+      213: -5317119461557120231
+    second: Boton Jugar_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Luz Verde_0
+      name: Boton Jugar_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 7
-        width: 209
-        height: 97
+        x: 0
+        y: 0
+        width: 400
+        height: 91
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 05325a31cb8547230800000000000000
-      internalID: 3635628364001518416
+      spriteID: 9135291650cc536b0800000000000000
+      internalID: -5317119461557120231
       vertices: []
       indices: 
       edges: []
