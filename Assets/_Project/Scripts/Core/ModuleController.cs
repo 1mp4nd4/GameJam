@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class ModuleController : MonoBehaviour
@@ -62,7 +63,11 @@ public class ModuleController : MonoBehaviour
         Debug.Log("Error detected");
         currentErrors++;
         if (currentErrors >= maxErrors)
+        {
             Debug.Log("Game over");
+            GameController.Instance.ChangeScene(GameController.Scenes.Gameover);
+        }
+            
     }
 
     

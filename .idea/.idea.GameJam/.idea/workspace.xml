@@ -6,13 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6972a669-df5a-4b68-bfbb-559b1400955b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/ILUSTRACIONES 1/GAME OVER.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/ILUSTRACIONES 1/GAME OVER.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Fonts/PixelifySans-VariableFont_wght SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Fonts/PixelifySans-VariableFont_wght SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Prefabs/LeverModule.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Prefabs/LeverModule.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scenes/Gameplay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scenes/Gameplay.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Core/ModuleController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Core/ModuleController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/GameModules/GameModuleButtons.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/GameModules/GameModuleButtons.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/GameModules/GameModuleLever.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/GameModules/GameModuleLever.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
