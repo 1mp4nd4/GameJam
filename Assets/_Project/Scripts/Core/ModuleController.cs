@@ -81,13 +81,13 @@ public class ModuleController : MonoBehaviour
         {
             Debug.Log("Crisis adverted.");
             currentLevel++;
-            if (currentLevel > 4)
+            if (currentLevel < 4)
             {
                 PopulateCorrectSequences(leverLevels, buttonLevels, currentLevel);
             }
             else
             {
-                GameController.Instance.ChangeScene(GameController.Scenes.Gameover);
+                GameController.Instance.ChangeScene(GameController.Scenes.MainMenu);
             }
         }
     }
