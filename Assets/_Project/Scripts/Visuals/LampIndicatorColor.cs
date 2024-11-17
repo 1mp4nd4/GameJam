@@ -17,7 +17,6 @@ public class LampIndicatorColor : MonoBehaviour
 
     public void CorrectSequenceFeedback()
     {
-        Debug.Log("test2");
         ChangeColor(correctColor);
     }
 

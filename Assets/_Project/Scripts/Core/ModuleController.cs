@@ -52,9 +52,7 @@ public class ModuleController : MonoBehaviour
 
     private void CorrectModuleDetected()
     {
-        Debug.Log("test1");
         lampFeedback.CorrectSequenceFeedback();
-        Debug.Log("test3");
 
         Debug.Log("Correct module detected");
         correctModules++;
