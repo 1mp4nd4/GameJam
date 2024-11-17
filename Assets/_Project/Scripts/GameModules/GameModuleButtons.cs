@@ -6,14 +6,17 @@ public class GameModuleButtons : GameModule
 {
     [SerializeField] private List<GameObject> gameObjects;
     [SerializeField] public List<int> correctSequence;
-    [SerializeField] private int currentIndex;
+    [SerializeField] public int currentIndex;
     private Animator _animator;
-    
+    [Header("Audio")][Space][SerializeField] private AudioClip errorSound;
+    [Header("Audio")][Space][SerializeField] private AudioClip correctSound;
+    private AudioSource audioSource;
     
     private void Start()
     {
         foreach (var gameObject in gameObjects)
         {
+            audioSource = GetComponent<AudioSource>();
             gameObject.AddComponent<HoverAnim>();
             gameObject.AddComponent<Clickable>().OnClick += () =>
             {
@@ -33,6 +36,7 @@ public class GameModuleButtons : GameModule
     {
         if (correctSequence[currentIndex] == index)
         {
+            audioSource.PlayOneShot(correctSound);
             Debug.Log("Correct!");
             currentIndex++;
             if (currentIndex >= correctSequence.Count)
@@ -44,6 +48,7 @@ public class GameModuleButtons : GameModule
         }
         else
         {
+            audioSource.PlayOneShot(errorSound);
             Debug.LogError("Incorrect object clicked!");
             OnSequenceEvent(false);
             currentIndex = 0; // Reset sequence on error

@@ -101,11 +101,13 @@ public class ModuleController : MonoBehaviour
             {
                 leverModule.correctSequence = leverLevels[level];
                 Debug.Log($"Populated correctSequence for {module.name}");
+                leverModule.currentIndex = 0;
             }
             if (module is GameModuleButtons buttonModule)
             {
                 buttonModule.correctSequence = buttonLevels[level];
                 Debug.Log($"Populated correctSequence for {module.name}");
+                buttonModule.currentIndex = 0;
             }
         }
     }
