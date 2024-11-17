@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,7 +7,9 @@ public class GameModuleButtons : GameModule
     [SerializeField] private List<GameObject> gameObjects;
     [SerializeField] private List<int> correctSequence;
     [SerializeField] private int currentIndex;
-
+    private Animator animator;
+    
+    
     private void Start()
     {
         if (gameObjects.Count == 0 || correctSequence.Count == 0)
@@ -14,8 +17,8 @@ public class GameModuleButtons : GameModule
             Debug.LogError("The gameObjects list and the correctSequence list must not be empty.");
             return;
         }
-
         foreach (var gameObject in gameObjects)
+            gameObject.AddComponent<HoverAnim>();
             gameObject.AddComponent<Clickable>().OnClick += () =>
             {
                 int index = GetGameObjectIndex(gameObject);
@@ -31,6 +34,7 @@ public class GameModuleButtons : GameModule
 
     private void OnGameObjectClicked(int index)
     {
+        
         if (correctSequence[currentIndex] == index)
         {
             Debug.Log("Correct!");
@@ -50,18 +54,48 @@ public class GameModuleButtons : GameModule
         }
     }
     
-    public class OnMouseOverExample : MonoBehaviour
+    public class HoverAnim : MonoBehaviour
     {
+        private Animator animator;
+        void Awake()
+        {
+            animator = GetComponent<Animator>();
+            if (animator == null)
+            {
+                Debug.LogError("Animator component not found on the GameObject.");
+            }
+        }
         void OnMouseOver()
         {
             //If your mouse hovers over the GameObject with the script attached, output this message
             Debug.Log("Mouse is over GameObject.");
+            animator.SetBool("Hover", true);
         }
 
         void OnMouseExit()
         {
             //The mouse is no longer hovering over the GameObject so output this message each frame
             Debug.Log("Mouse is no longer on GameObject.");
+            animator.SetBool("Hover", false);
+            if (animator.GetBool("HasClicked"))
+            {
+                animator.SetBool("HasClicked", false);
+            }
+        }
+
+        private void OnMouseDown()
+        { 
+            Debug.Log("Press");
+            animator.SetTrigger("Press");
+            animator.SetBool("HasClicked", true);
+        }
+
+        private void SetHover(bool isHovering)
+        {
+            // Implement the logic to change the Hover parameter of the GameObject
+            // For example, you can change a material property, trigger an animation, etc.
+            // This is a placeholder implementation
+            Debug.Log($"Hover parameter set to: {isHovering}");
         }
     }
 

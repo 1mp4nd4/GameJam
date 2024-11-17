@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6972a669-df5a-4b68-bfbb-559b1400955b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/GameModules.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/GameModules/GameModule.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/GameModules/GameModuleButtons.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Module.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/GameModules/GameModuleButtons.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Module.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/GameModules/GameModule.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/GameModules/GameModuleButtons.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/GameModules/GameModuleButtons.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Sprites/Animations/Button.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Sprites/Animations/Button.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Sprites/Animations/ButtonPress.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Sprites/Animations/ButtonPress.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +102,7 @@
       <updated>1731720274575</updated>
       <workItem from="1731720275668" duration="402000" />
       <workItem from="1731720686787" duration="5479000" />
-      <workItem from="1731726684194" duration="21348000" />
+      <workItem from="1731726684194" duration="29725000" />
     </task>
     <servers />
   </component>
