@@ -689,7 +689,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: GameTitle
+  m_text: Lluvia de problemas
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 060381bc260f07f489e19e4314cba828, type: 2}
   m_sharedMaterial: {fileID: -1191391984908909821, guid: 060381bc260f07f489e19e4314cba828, type: 2}
@@ -698,8 +698,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294905088
-  m_fontColor: {r: 0, g: 0.051280975, b: 1, a: 1}
+    rgba: 4294901842
+  m_fontColor: {r: 0.32159996, g: 0, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -716,7 +716,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 152
+  m_fontSize: 86.9
   m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 1
