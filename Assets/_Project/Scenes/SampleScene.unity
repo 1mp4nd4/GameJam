@@ -494,7 +494,9 @@ MonoBehaviour:
   - {fileID: 1215822868}
   correctSequence: 00000000
   currentIndex: 0
-  leverTransform: {fileID: 0}
+  leverTransform: {fileID: 407686849}
+  animationSpeed: 1
+  animationEase: 27
 --- !u!1 &404856334
 GameObject:
   m_ObjectHideFlags: 0
