@@ -8,6 +8,9 @@ public class ModuleController : MonoBehaviour
     [SerializeField] public int currentErrors = 0;
     [SerializeField]private int correctModules = 0;
 
+    [Header("Visuals")][Space]
+    [SerializeField] private LampIndicatorColor lampFeedback;
+
     private void Start()
     {
         currentErrors = 0;
@@ -39,6 +42,8 @@ public class ModuleController : MonoBehaviour
 
     private void ErrorDetected()
     {
+        lampFeedback.IncorrectSequenceFeedback();
+
         Debug.Log("Error detected");
         currentErrors++;
         if (currentErrors >= maxErrors)
@@ -47,6 +52,10 @@ public class ModuleController : MonoBehaviour
 
     private void CorrectModuleDetected()
     {
+        Debug.Log("test1");
+        lampFeedback.CorrectSequenceFeedback();
+        Debug.Log("test3");
+
         Debug.Log("Correct module detected");
         correctModules++;
         if (correctModules >= modulesList.Count)
