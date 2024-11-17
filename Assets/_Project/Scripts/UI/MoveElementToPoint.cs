@@ -8,7 +8,7 @@ public class MoveElementToPoint : MonoBehaviour
     [SerializeField] private Vector2 targetPosition = Vector2.zero;
     [SerializeField] private float movementDuration = 1f;
     [SerializeField] private Ease easeType = Ease.InOutBack;
-
+    [SerializeField] private int index;
     private RectTransform objectToMove;
     private Tween vectorTween;
 
@@ -32,3 +32,4 @@ public class MoveElementToPoint : MonoBehaviour
         vectorTween?.Kill();
     }
 }
+    

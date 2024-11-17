@@ -5,7 +5,7 @@ public class ModuleController : MonoBehaviour
 {
     [SerializeField] private List<GameModule> modulesList = new();
     [SerializeField] private int maxErrors = 3;
-    [SerializeField]private int currentErrors = 0;
+    [SerializeField] public int currentErrors = 0;
     [SerializeField]private int correctModules = 0;
 
     private void Start()

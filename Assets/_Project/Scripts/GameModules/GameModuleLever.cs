@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameModuleButtons : GameModule
+public class GameModuleLever : GameModule
 {
     [SerializeField] private List<GameObject> gameObjects;
     [SerializeField] private List<int> correctSequence;
@@ -19,7 +19,7 @@ public class GameModuleButtons : GameModule
         }
         foreach (var gameObject in gameObjects)
         {
-            gameObject.AddComponent<HoverAnim>();
+            //gameObject.AddComponent<HoverAnim>();
             gameObject.AddComponent<Clickable>().OnClick += () =>
             {
                 int index = GetGameObjectIndex(gameObject);
@@ -36,6 +36,7 @@ public class GameModuleButtons : GameModule
 
     private void OnGameObjectClicked(int index)
     {
+        
         if (correctSequence[currentIndex] == index)
         {
             Debug.Log("Correct!");
