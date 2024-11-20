@@ -1,6 +1,6 @@
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
+using TMPro;
 
 public class ModuleController : MonoBehaviour
 {
@@ -9,6 +9,7 @@ public class ModuleController : MonoBehaviour
     [SerializeField] public int currentErrors = 0;
     [SerializeField] private int correctModules = 0;
     [SerializeField] private int currentLevel;
+    [SerializeField] private List<string> serialCodeByLevel = new();
     [SerializeField] private List<int> level1Lever = new List<int>();
     [SerializeField] private List<int> level2Lever = new List<int>();
     [SerializeField] private List<int> level3Lever = new List<int>();
@@ -18,14 +19,15 @@ public class ModuleController : MonoBehaviour
     [Header("Visuals")][Space][SerializeField] private LampIndicatorColor lampFeedback;
     [SerializeField] private List<List<int>> leverLevels;
     [SerializeField] private List<List<int>> buttonLevels;
+    [SerializeField] private TextMeshProUGUI serialText;
 
     private void Awake()
     {
         leverLevels = new List<List<int>> { level1Lever, level2Lever, level3Lever };
         buttonLevels = new List<List<int>> { level1Button, level2Button, level3Button };
-        
+
     }
-    
+
     private void Start()
     {
         currentErrors = 0;
@@ -38,7 +40,7 @@ public class ModuleController : MonoBehaviour
         {
             module.SequenceEvent += OnSequenceEvent;
         }
-        
+
     }
 
     private void OnDisable()
@@ -67,11 +69,11 @@ public class ModuleController : MonoBehaviour
             Debug.Log("Game over");
             GameController.Instance.ChangeScene(GameController.Scenes.Gameover);
         }
-            
+
     }
 
-    
-    
+
+
     private void CorrectModuleDetected()
     {
         lampFeedback.CorrectSequenceFeedback();
@@ -86,16 +88,17 @@ public class ModuleController : MonoBehaviour
                 PopulateCorrectSequences(leverLevels, buttonLevels, currentLevel);
                 correctModules = 0;
             }
-            else if(currentLevel == 3)
+            else if (currentLevel == 3)
             {
                 GameController.Instance.ChangeScene(GameController.Scenes.MainMenu);
             }
         }
     }
-    
+
     private void PopulateCorrectSequences(List<List<int>> leverLevels, List<List<int>> buttonLevels, int level)
     {
         Debug.Log($"Populating sequences for level {level}");
+        serialText.SetText(serialCodeByLevel[level]);
         foreach (var module in modulesList)
         {
             if (module is GameModuleLever leverModule)
@@ -113,4 +116,3 @@ public class ModuleController : MonoBehaviour
         }
     }
 }
-  
